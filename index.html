@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="body">
+        <div id="bodytext">
+            <H1>LOVE <SPAN><i class="fa-sharp fa-solid fa-heart" style="color: red;"></i></SPAN> CALCULATOR</H1>
+<h3>Get Your Own Love Result Instantly</p>
+        </div>
+
+    
+    <div id="inputbody">
+        <div id="input">
+            <p>*Your name</p>
+            
+        <input type="text" name="text"  placeholder="Enter Your Name" id="Boy">
+        </div>
+
+        <div id="input">
+            <p>*His or Her name</p>
+            
+        <input type="text" name="text" class="input" placeholder="Enter Your Name" id="Girl">
+        </div>
+    </div>
+    <button onclick="result()">
+        Generate Love
+        <svg height="32" width="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H24V24H0z" fill="none"></path><path d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"></path></svg>
+      </button>
+      
+    <!-- <button onclick="result()">Generate love</button> -->
+    <h1 id="inp"></h1>
+    </div>
+    
+
+
+    <script>
+        function result() {
+            var a = document.getElementById("Boy").value
+            var b = document.getElementById("Girl").value
+          var calculate = Math.round ((Math.random()*100))
+
+          document.getElementById("inp").innerHTML = `The calculation between ${a} and ${b} is ${calculate}%` 
+          
+        }
+console.log (Math.round (3.26))
+console.log (Math.ceil(4.26))
+console.log (Math.floor())
+console.log (Math.sqrt(4))
+console.log (Math.pow (4,2))
+        console.log ("inp")
+    </script>
+</body>
+</html>
